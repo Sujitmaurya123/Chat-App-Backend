@@ -72,6 +72,7 @@ app.get("/",(req,res)=>{
     res.send("Hello")
 })
 
+// using socket.io
 io.use((socket, next) => {
     cookieParser()(
         socket.request,
